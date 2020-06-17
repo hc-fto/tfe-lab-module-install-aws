@@ -1,0 +1,9 @@
+# Terraform Enterprise on AWS Variables File
+# Replace the prefix and animal-name below.
+# You can find your animal name with this command:
+# echo $ANIMAL
+
+friendly_name_prefix = "changeme"
+tfe_hostname = "tfe.animal-name.training.hashidemos.io"
+route53_hosted_zone_name = "animal-name.training.hashidemos.io"
+tfe_license_file_path = "/var/tfe_license.rli"
