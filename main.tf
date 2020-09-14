@@ -61,6 +61,6 @@ module "tfe" {
   # These should be customized in your terraform.tfvars file
   friendly_name_prefix       = var.friendly_name_prefix
   tfe_hostname               = var.tfe_hostname
-  tfe_license_file_path      = var.tfe_license_file_path
-  route53_hosted_zone_name   = var.route53_hosted_zone_name
+  tfe_license_filepath      = var.tfe_license_file_path
+  route53_hosted_zone_public   = var.route53_hosted_zone_name
 }
