@@ -28,13 +28,13 @@ variable "tfe_license_file_path" {
 variable "tfe_release_sequence" {
   type        = string
   description = "TFE application version release sequence number within Replicated (leave blank to default to latest version)"
-  default     = null
+  default     = ""
 }
 
 variable "tfe_initial_admin_username" {
   type        = string
   description = "Username for initial TFE local adminitrator account"
-  default     = null
+  default     = ""
 }
 
 variable "tfe_initial_admin_email" {
@@ -52,7 +52,7 @@ variable "tfe_initial_admin_pw" {
 variable "tfe_initial_org_name" {
   type        = string
   description = "Name of initial TFE Organization created by bootstrap process / cloud-init script"
-  default     = null
+  default     = ""
 }
 
 variable "tfe_initial_org_email" {
@@ -122,7 +122,7 @@ variable "tls_certificate_arn" {
 variable "kms_key_arn" {
   type        = string
   description = "ARN of KMS key to encrypt TFE S3 and RDS resources"
-  default     = null
+  default     = ""
 }
 
 # Uncomment if you have an existing SSH key pair that you want to specify

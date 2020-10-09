@@ -50,7 +50,6 @@ module "tfe" {
   tfe_release_sequence       = var.tfe_release_sequence
   tfe_initial_admin_username = var.tfe_initial_admin_username
   tfe_initial_admin_email    = var.tfe_initial_admin_email
-  tfe_initial_admin_pw       = var.tfe_initial_admin_pw
   tfe_initial_org_name       = var.tfe_initial_org_name
   os_distro                  = var.os_distro
   ingress_cidr_alb_allow     = var.ingress_cidr_alb_allow
@@ -61,6 +60,6 @@ module "tfe" {
   # These should be customized in your terraform.tfvars file
   friendly_name_prefix       = var.friendly_name_prefix
   tfe_hostname               = var.tfe_hostname
-  tfe_license_file_path      = var.tfe_license_file_path
-  route53_hosted_zone_name   = var.route53_hosted_zone_name
+  tfe_license_filepath      = var.tfe_license_file_path
+  route53_hosted_zone_public = var.route53_hosted_zone_name
 }
