@@ -40,7 +40,7 @@ variable "tfe_initial_admin_username" {
 variable "tfe_initial_admin_email" {
   type        = string
   description = "Email address for initial TFE local adminitrator account"
-  default     = ""
+  default     = null
 }
 
 variable "tfe_initial_admin_pw" {
@@ -52,13 +52,13 @@ variable "tfe_initial_admin_pw" {
 variable "tfe_initial_org_name" {
   type        = string
   description = "Name of initial TFE Organization created by bootstrap process / cloud-init script"
-  default     = ""
+  default     = null
 }
 
 variable "tfe_initial_org_email" {
   type        = string
   description = "Email address of initial TFE Organization created by bootstrap process / cloud-init script"
-  default     = ""
+  default     = null
 }
 
 ################################################
