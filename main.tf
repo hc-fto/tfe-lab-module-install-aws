@@ -36,7 +36,7 @@ module "vpc" {
 }
 
 module "tfe" {
-  source = "../is-terraform-aws-tfe-standalone-quick-install"
+  source = "../is-terraform-aws-tfe-standalone"
 
   # These are created by the terraform code above ^^^
   ssh_key_pair               = aws_key_pair.sshkey.key_name
